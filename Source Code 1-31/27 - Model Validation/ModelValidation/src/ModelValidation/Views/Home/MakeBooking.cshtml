@@ -1,0 +1,33 @@
+﻿@model Appointment
+
+@{ Layout = "_Layout"; }
+
+@section scripts {
+    <script asp-src-include="lib/jquery/dist/*.min.js"></script>
+    <script asp-src-include="lib/jquery-validation/dist/jquery.*.min.js"></script>
+    <script asp-src-include="lib/jquery-validation-unobtrusive/*.min.js"></script>
+}
+
+<div class="bg-primary panel-body"><h2>Book an Appointment</h2></div>
+
+<form class="panel-body" asp-action="MakeBooking" method="post">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="ClientName">Your name:</label>
+        <div><span asp-validation-for="ClientName" class="text-danger"></span></div>
+        <input asp-for="ClientName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Date">Appointment Date:</label>
+        <div><span asp-validation-for="Date" class="text-danger"></span></div>
+        <input asp-for="Date" type="text" asp-format="{0:d}" class="form-control" />
+    </div>
+    <span asp-validation-for="TermsAccepted" class="text-danger"></span>
+    <div class="radio form-group">
+        <input asp-for="TermsAccepted" />
+        <label asp-for="TermsAccepted">I accept the terms & conditions</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Make Booking</button>
+</form>
