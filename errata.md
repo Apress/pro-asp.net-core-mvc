@@ -14,3 +14,5 @@ If the ModelState.**IsValue** property returns false , then I know that there ar
 In the first row of the table in the "Solution" column, the text reads, "Use an @Model expression to define the model type and @model expressions to access the model object". This should read "Use an **@model** expression to define the model type and **@Model** expressions to access the model object".
 
 ***
+
+**Figure 7-8** Figure shows the nutget.org package source unchecked. Both of the package sources shown in the figure should be checked, otherwise Visual Studio will not be able to download and install the Microsoft packages required for the examples.
