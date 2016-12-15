@@ -16,3 +16,10 @@ In the first row of the table in the "Solution" column, the text reads, "Use an 
 ***
 
 **Figure 7-8** Figure shows the nutget.org package source unchecked. Both of the package sources shown in the figure should be checked, otherwise Visual Studio will not be able to download and install the Microsoft packages required for the examples.
+
+***
+
+On **page 298** `table` should be `product`:
+
+This view contains a table that has a row for each product with cells that contains the name of the **product**,
+the price, and buttons that will allow the product to be edited or deleted by sending requests to  Edit  and Delete  actions.
